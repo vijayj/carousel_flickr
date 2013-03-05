@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Carousel Application
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/main.css"}
+  %body
+    %ul.horizontal
+      %li
+        %a{:href => "show"} Hit Flickr
+      %li
+        %a{:href => "/"} Index
+      
+      %p== You are: #{the_user_name}
+      = yield
